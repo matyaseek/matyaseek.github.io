@@ -1,1 +1,1 @@
-## Tento kod není můj, jenom jsem si ho stáhl a uprovil podle sebe pro svoje experimentování.
+## Moje Internetová Vizitka
