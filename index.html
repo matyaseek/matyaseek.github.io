@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Profle Card  | Matyáš Grabka </title>
-  <!---Custom Css File!--->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>matyaseek.com</title>
 </head>
 <body>
-  <section class="main">
-  <div class="profile-card">
-    <div class="image">
-      <img src="https://avatars.githubusercontent.com/u/180205719?v=4" alt="" class="profile-pic">
-    </div>
-    <div class="data">
-      <h2>Matyáš Grabka</h2>
-      <span>IT Student</span>
-    </div>
-    <div class="row">
-      <div class="info">
-        <h3>Following</h3>
-        <span>231</span>
+    <div class="container">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Audio element for background music -->
+        <audio id="background-music" loop>
+            <source src="audio/music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+    <script>
+        document.addEventListener("click", function() {
+            let audio = document.getElementById("background-music");
+            audio.volume = 0.1; // Set volume to 20%
+            if (audio.paused) {
+                audio.play().catch(error => console.log("Audio play error: ", error));
+            }
+        });
+    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Profle Card  | Matyáš Grabka </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="main">
+    <div class="profile-card">
+      <div class="image">
+        <img src="https://avatars.githubusercontent.com/u/180205719?v=4" alt="" class="profile-pic">
       </div>
-      <div class="info">
-        <h3>Followers</h3>
-        <span>208</span>
+      <div class="data">
+        <h2>Matyáš Grabka</h2>
+        <span>IT Student</span>
       </div>
-      <div class="info">
-        <h3>Posts</h3>
-        <span>2</span>
+      <div class="row">
+        <div class="info">
+          <h3>Following</h3>
+          <span>231</span>
+        </div>
+        <div class="info">
+          <h3>Followers</h3>
+          <span>208</span>
+        </div>
+        <div class="info">
+          <h3>Posts</h3>
+          <span>2</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="https://www.instagram.com/matesgrabka/" class="btn" target="_blank" >Instagram</a>
+        <a href="https://discord.com/users/661271321295978506" class="btn" target="_blank" >Discord</a>
       </div>
     </div>
-    <div class="buttons">
-      <a href="https://www.instagram.com/matesgrabka/" class="btn" target="_blank" >Instagram</a>
-      <a href="https://discord.com/users/661271321295978506" class="btn" target="_blank" >Discord</a>
-    </div>
-  </div>
-</section>
-</body>
-</html>
+  </section>
+  </body>
+  </html>
